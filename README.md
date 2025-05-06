@@ -1,10 +1,10 @@
 # Adaptive Thresholding for Fiber Volume Fraction Estimation
 
-This Python script processes grayscale images of composite materials to estimate the **fiber volume fraction** within a specific layer and calculate the **global volume fraction** in a multi-layered structure.
+This Python script processes images of composite materials to estimate the **local fiber volume fraction** of a specific layer and calculate the **global volume fraction** in a multi-layered structure.
 
 ## Overview
 
-Given a grayscale image (e.g., obtained from SEM or optical microscopy), the script:
+Given an image, the script:
 1. Applies contrast and brightness adjustments.
 2. Performs adaptive thresholding to isolate the fibrous regions.
 3. Calculates the volume fraction of fibers based on pixel density.
@@ -13,7 +13,7 @@ Given a grayscale image (e.g., obtained from SEM or optical microscopy), the scr
 ## Example Output
 
 The script also generates a side-by-side plot displaying:
-- The original grayscale image.
+- The original image.
 - The contrast-adjusted image.
 - The thresholded binary image.
 
@@ -22,7 +22,7 @@ The script also generates a side-by-side plot displaying:
 All user-defined parameters are declared at the beginning of the script in the **Settings** section. These include:
 
 ### Paths
-- `INPUT`: Path to the input grayscale image.
+- `INPUT`: Path to the input image.
 - `OUTPUT`: Path to save the filtered thresholded image.
 
 ### Image Processing
